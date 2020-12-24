@@ -133,6 +133,14 @@ header .icons i {
   color: var(--light-black-color);
 }
 
+.info .button_list .good.clicked {
+  color: var(--blue-color);
+}
+
+.info .button_list .bad.clicked {
+  color: var(--blue-color);
+}
+
 .info .button_list button i {
   margin: 0 auto;
   margin-bottom: calc(var(--padding) / 2);
