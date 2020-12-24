@@ -1,0 +1,128 @@
+:root {
+  --text-color: #2c3e50;
+  --blue-color: #3498db;
+  --red-color: #e74c3c;
+  --white-color: #ecf0f1;
+  --brown-color: #b33939;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans";
+  color: var(--text-color);
+  background-color: var(--white-color);
+}
+
+button {
+  text-decoration: none;
+  border: none;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--brown-color);
+  color: var(--white-color);
+  padding: 10px 15px;
+}
+
+.navbar_logo i {
+  color: var(--red-color);
+}
+
+.navbar_ex i {
+  padding-right: 10px;
+}
+
+video {
+  width: 100%;
+}
+
+.main {
+  margin: 5px 10px;
+}
+
+.hashtag ul {
+  display: flex;
+  list-style: none;
+  color: var(--blue-color);
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+}
+
+.hashtag li {
+  padding-right: 10px;
+}
+
+.title_box {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.view_number {
+  font-size: 12px;
+}
+
+.button_list {
+  margin: 20px 30px;
+  padding: 0;
+}
+
+.button_list ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+}
+
+.button_list button:hover {
+  color: var(--blue-color);
+}
+
+.subscribe {
+  display: flex;
+  justify-content: space-between;
+}
+
+.subscribe .youtuber_info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.subscribe .youtuber_info img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+hr {
+  width: 100%;
+  height: 1px;
+}
+
+.subscribe_btn {
+  color: var(--red-color);
+}
+
+.next_list {
+  display: flex;
+  margin-top: 10px;
+}
+
+.next_list img {
+  width: 300px;
+  height: 200px;
+  margin-right: 10px;
+}
+
+.next_list i {
+  margin-left: 10px;
+}
+
+.next_list .channel,
+.view_num {
+  font-size: 12px;
+}
