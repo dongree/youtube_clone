@@ -7,97 +7,102 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <title>YouTube</title>
     <script src="https://kit.fontawesome.com/3895695ec3.js" crossorigin="anonymous"></script>
+    <script src="main.js" defer></script>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="navbar_logo">
+    <!-- Header -->
+    <header>
+        <div class="logo">
             <i class="fab fa-youtube"></i>
             <span>YouTube</span>
         </div>
-        <div class="navbar_ex">
+        <div class="icons">
             <i class="fas fa-search"></i>
             <i class="fas fa-ellipsis-v"></i>
         </div>
-    </nav>
-    <video controls>
-        <source src="video/showMeTheMoney.mp4">
-    </video>
-    <div class="main">
-        <div class="hashtag">
-            <ul>
+    </header>
+
+    <!-- Video Player -->
+    <section class="player">
+        <video controls src="video/showMeTheMoney.mp4">
+    </section>
+
+
+    <div class="infoAndUpNext">
+        <!-- Video Info -->
+        <section class="info">
+        <div class="metadata">
+            <ul class="hashtags"> 
                 <li>#Show Me the Money</li>
                 <li>#Lil Boy</li>
                 <li>#Giri Boy</li>
                 <li>#BIG Naughty</li>
             </ul>
+            <div class='titleAndButton'>
+                <span class='title clamp'>
+                    [ENG] SMTM9 [8회/풀버전] '내일이 오면' (Feat. 기리보이, BIG Naughty(서동현)) - 릴보이 @본선 full ver. EP.8 201204
+                </span>
+                <button class="moreBtn">
+                    <i class="fas fa-caret-down"></i>
+                </button>
+            </div>
+            <span class='views'>조회수 3,894,913회  2020. 12. 5.</span>
         </div>
-        <div class='title_box'>
-            <span>[ENG] SMTM9 [8회/풀버전] '내일이 오면' (Feat. 기리보이, BIG Naughty(서동현)) - 릴보이 @본선 full ver. EP.8 201204</span>
-            <i class="fas fa-caret-down"></i>
-        </div>
-        <div class='view_number'>
-            <span>조회수 3,894,913회  2020. 12. 5.</span>
-        </div>
-        <div class='button_list'>
-            <ul>
-                <button><i class="fas fa-thumbs-up"></i></button>
-                <button><i class="fas fa-thumbs-down"></i></button>
-                <button><i class="fas fa-share"></i></button>
-                <button><i class="fas fa-plus"></i></button>
-                <button><i class="fas fa-flag"></i></button>
-            </ul>
-            <ul>
-                <li>1K</li>
-                <li>0</li>
-                <li>Share</li>
-                <li>Save</li>
-                <li>Report</li>
-            </ul>
-        </div>
-        <hr>
-        <div class="subscribe">
-            <div class="youtuber_info">
+        <ul class='button_list'>
+            <li><button><i class="fas fa-thumbs-up"></i><span>1K</span></button></li>
+            <li><button><i class="fas fa-thumbs-down"></i><span>0</span></button></li>
+            <li><button><i class="fas fa-share"></i><span>Share</span></button></li>
+            <li><button><i class="fas fa-plus"></i><span>Save</span></button></li>
+            <li><button><i class="fas fa-flag"></i><span>Report</span></button></li>
+        </ul>
+        <div class="channel">
+            <div class="metadata">
                 <img src="image/mnet.jpg" alt="mnet">
-                <div>
-                    <div>Mnet Official</div>
-                    <div>1M subscribers</div>
+                <div class="info">
+                    <span class="name">Mnet Official</span>
+                    <span class="subscribers">1M subscribers</span>
                 </div>
             </div>
             <button class="subscribe_btn">
-                SUBSCRIBE
+                subsribe
             </button>
         </div>
-        <hr>
-        <div>
-            Up next
-        </div>
-        <div class="next_list">
-            <img src="image/1.jpg" alt="">
-            <div>
-                <div class="title">[4K] JUSTHIS(저스디스)의 킬링벌스를 라이브로! I IndiGO, Diablo, Gone, DF KV Freestyle, That Ain't Real 등</div>
-                <div class="channel">dingo freestyle</div>
-                <div class="view_num">조회수1601만</div>
-            </div>
-            <i class="fas fa-ellipsis-v"></i>
-        </div>
-        <div class="next_list">
-            <img src="image/2.jpg" alt="">
-            <div>
-                <div class="title">[4K] 창모(Changmo)의 킬링벌스를 라이브로! | Selfmade orange, BAND, I always, Interlude, 아이야, 널 지워야해, 비워 등</div>
-                <div class="channel">dingo freestyle</div>
-                <div class="view_num">조회수2534만</div>
-            </div>
-            <i class="fas fa-ellipsis-v"></i>
-        </div>
-        <div class="next_list">
-            <img src="image/3.jpg" alt="">
-            <div>
-                <div class="title">[4K] 호미들의 킬링벌스를 라이브로! | 꽉 쥔 주먹속의 라이터, 사이렌, 백반 청국장, In The Wild, 진인사대천명 등</div>
-                <div class="channel">dingo freestyle</div>
-                <div class="view_num">조회수61만</div>
-            </div>
-            <i class="fas fa-ellipsis-v"></i>
-        </div>    
+        </section>
+
+    <!-- Up Next -->
+        <section class="UpNext">
+        <span class="title">Up Next</span>
+        <ul>
+            <li class="item">
+                <div class="img"><img src="image/1.jpg" alt=""></div>
+                <div class="info">
+                    <span class="title">[4K] JUSTHIS(저스디스)의 킬링벌스를 라이브로! I IndiGO, Diablo, Gone, DF KV Freestyle, That Ain't Real 등</span>
+                    <span class="name">dingo freestyle</span>
+                    <span class="views">조회수1601만</span>
+                </div>
+                <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+            </li>
+            <li class="item">
+                <div class="img"><img src="image/2.jpg" alt=""></div>
+                <div class="info">
+                    <span class="title">[4K] 창모(Changmo)의 킬링벌스를 라이브로! | Selfmade orange, BAND, I always, Interlude, 아이야, 널 지워야해, 비워 등</span>
+                    <span class="name">dingo freestyle</span>
+                    <span class="views">조회수2534만</span>
+                </div>
+                <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+            </li>
+            <li class="item">
+                <div class="img"><img src="image/3.jpg" alt=""></div>
+                <div class="info">
+                    <span class="title">[4K] 호미들의 킬링벌스를 라이브로! | 꽉 쥔 주먹속의 라이터, 사이렌, 백반 청국장, In The Wild, 진인사대천명 등</span>
+                    <span class="name">dingo freestyle</span>
+                    <span class="views">조회수61만</span>
+                </div>
+                <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+            </li>
+        </ul>
+        </section>
     </div>
+
 </body>
 </html>
